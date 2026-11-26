@@ -19,12 +19,12 @@
     'Graph AI': ['Knowledge graphs', 'GNNs', 'Graph embeddings'],
     'Evaluation': ['Responsible AI', 'Retrieval quality'],
     'Production ML': ['MLOps', 'Anomaly detection', 'Azure AI Foundry'],
-    'Life sciences': ['Discovery', 'Regulatory', 'Manufacturing']
+    'Domains': ['Pharma', 'Telecom', 'IoT']
   };
   const cross = [
     ['RAG', 'Knowledge graphs'], ['Retrieval quality', 'RAG'], ['Agents', 'Evaluation'],
-    ['Discovery', 'Knowledge graphs'], ['Azure AI Foundry', 'Agents'], ['LLMs', 'Multi agent'],
-    ['Anomaly detection', 'Graph embeddings']
+    ['Pharma', 'Knowledge graphs'], ['Azure AI Foundry', 'Agents'], ['LLMs', 'Multi agent'],
+    ['Anomaly detection', 'Graph embeddings'], ['Telecom', 'Anomaly detection'], ['IoT', 'Anomaly detection']
   ];
 
   const nodes = [];
