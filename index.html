@@ -367,6 +367,21 @@
               <h3 class="title-1"><a href="https://ariel.primo.exlibrisgroup.com/permalink/972ARIEL_INST/13fs2rd/alma994634950607236" target="_blank" rel="noopener">A Multi-Layered Graph-Based Model for Proactive Event Correlation and Prediction in IT Operations</a></h3>
               <p class="body-6 pub-authors"><strong>N Azaizah</strong> · Supervisor: Prof. Iris Reychav</p>
               <p class="caption-2 pub-venue">Department of Industrial Engineering and Management, Faculty of Engineering. 124 pages.</p>
+                            <details class="pub-abstract">
+                              <summary class="caption-3">Abstract<i class="ph ph-caret-down" aria-hidden="true"></i></summary>
+                              <div class="pub-abstract-body body-6">
+                                <p>Large organizations rely on monitoring tools to generate alerts for potential issues within their IT systems. However, these alerts often arrive without structure or context, making event correlation and prediction challenging for IT operations teams. Event correlation involves grouping related events that typically occur within a short time window, while event prediction aims to detect future failure events early.</p>
+                                <p>Most existing solutions focus on temporal data, overlooking critical structural relationships between failure events. In response, this research has developed a novel multi-layered, graph-based model. Unlike traditional methods, this model uniquely integrates structural, temporal, and predictive insights, enhancing proactive management alert failure events and potentially revolutionizing the field of IT operations.</p>
+                                <p>To mimic real-world operational scenarios, we synthetically generate event metadata and event history logs of various sizes and complexities. This process, which incorporates statistical models and introduces noise to reflect diverse environments and production situations, provides a strong foundation for the model's validation across various operational challenges. The thorough validation process instills confidence in the model's reliability and robustness.</p>
+                                <p>The architecture of the built model comprises three core layers:</p>
+                                <ul>
+                                  <li><strong>Structure Layer:</strong> This layer builds a heterogeneous graph from event metadata, using Node2Vec embeddings to capture complex structural dependencies among events.</li>
+                                  <li><strong>Temporal Layer:</strong> This layer builds a weighted co-occurrence graph with Pointwise Mutual Information (PMI) to assess the strength of temporal relationships. Using the Louvain community detection algorithm, it identifies temporal clusters, uncovering significant patterns within event sequences.</li>
+                                  <li><strong>Prediction Layer:</strong> This layer integrates the outputs from the structure and temporal layers, leveraging a Graph Attention Network (GAT) with message-passing and attention mechanisms on a bipartite graph. A Multilayer Perceptron (MLP) refines these predictions, estimating the likelihood of an event linking to an ongoing failure group.</li>
+                                </ul>
+                                <p>Hyperparameter tuning and extensive benchmarking reveal that our model consistently outperforms traditional baselines, such as logistic regression, random forests, and recurrent neural networks, across accuracy, F1-score, AUC, Precision@K, and Recall@K. This superior performance highlights the model's effectiveness in capturing structural and temporal event dependencies.</p>
+                              </div>
+                            </details>
             </div>
             <div class="pub-cites"><i class="ph ph-graduation-cap" aria-hidden="true"></i><span class="caption-5">doctoral</span></div>
           </li>
@@ -377,6 +392,13 @@
               <h3 class="title-1"><a href="https://doi.org/10.1016/j.eswa.2022.118489" target="_blank" rel="noopener">Context-aware incremental clustering of alerts in monitoring systems</a></h3>
               <p class="body-6 pub-authors">L Turgeman, Y Avrashi, G Vagner, <strong>N Azaizah</strong>, S Katkar</p>
               <p class="caption-2 pub-venue">Expert Systems with Applications, 210, 118489</p>
+                            <details class="pub-abstract">
+                              <summary class="caption-3">Abstract<i class="ph ph-caret-down" aria-hidden="true"></i></summary>
+                              <div class="pub-abstract-body body-6">
+                                <p>The highly complex nature of today's modern hybrid IT applications continues to present an increasing challenge for operation teams relying on traditional monitoring approaches. In monitoring systems, incidents occur frequently due to a variety of causes, from updates to software and hardware, to changes in operation environment. These incidents could significantly degrade the system's availability and customers' satisfaction. In many cases, investigating an incident in such an environment could feel like looking for a needle in a haystack – and you may not even know how the needle looks like until you see it. In that regard, one of the main challenges is how to efficiently analyze multiple sets of alert messages stemming from disparate monitoring tools and collectors across the application stack, in real-time. Such an analysis can provide trustworthy detection of system states at various critical points, thus helping teams to detect, frame, analyze and resolve incidents or failures in a relatively short time, especially if an accurate system's topological dependencies are absent.</p>
+                                <p>In this work, we suggest a new approach to determining relations among alerts – forming “events”. The suggested approach directly models the event's likelihood, by first embedding alerts' corresponding metrics into a common latent space where the distance among metrics can be naturally defined, using a word2vec model, and then cluster alerts by employing a tailored incremental clustering algorithm. The suggested approach allows controlling the trade-off between the model's sensitivity to clusters' noise-robustness, thus spanning a wide range of clustering mechanisms, as well as adapting clusters' outcomes to the level and properties of the noise expected in input data.</p>
+                              </div>
+                            </details>
             </div>
             <div class="pub-cites"><span class="mono title-2">13</span><span class="caption-5">citations</span></div>
           </li>
@@ -387,6 +409,12 @@
               <h3 class="title-1"><a href="https://doi.org/10.3390/math10091526" target="_blank" rel="noopener">Graph network techniques to model and analyze emergency department patient flow</a></h3>
               <p class="body-6 pub-authors">I Reychav, R McHaney, S Babbar, K Weragalaarachchi, <strong>N Azaizah</strong>, et al.</p>
               <p class="caption-2 pub-venue">Mathematics, 10 (9), 1526</p>
+                            <details class="pub-abstract">
+                              <summary class="caption-3">Abstract<i class="ph ph-caret-down" aria-hidden="true"></i></summary>
+                              <div class="pub-abstract-body body-6">
+                                <p>This article moves beyond analysis methods related to a traditional relational database or network analysis and offers a novel graph network technique to yield insights from a hospital's emergency department work model. The modeled data were saved in a Neo4j graphing database as a time-varying graph (TVG), and related metrics, including degree centrality and shortest paths, were calculated and used to obtain time-related insights from the overall system. This study demonstrated the value of using a TVG method to model patient flows during emergency department stays. It illustrated dynamic relationships among hospital and consulting units that could not be shown with traditional analyses. The TVG approach augments traditional network analysis with temporal-related outcomes including time-related patient flows, temporal congestion points details, and periodic resource constraints. The TVG approach is crucial in health analytics to understand both general factors and unique influences that define relationships between time-influenced events. The resulting insights are useful to administrators for making decisions related to resource allocation and offer promise for understanding impacts of physicians and nurses engaged in specific patient emergency department experiences. We also analyzed customer ratings and reviews to better understand overall patient satisfaction during their journey through the emergency department.</p>
+                              </div>
+                            </details>
             </div>
             <div class="pub-cites"><span class="mono title-2">9</span><span class="caption-5">citations</span></div>
           </li>
@@ -397,6 +425,12 @@
               <h3 class="title-1"><a href="https://doi.org/10.1016/j.ijinfomgt.2018.08.010" target="_blank" rel="noopener">Impact of ESN implementation on communication and knowledge-sharing in a multi-national organization</a></h3>
               <p class="body-6 pub-authors"><strong>N Azaizah</strong>, I Reychav, DR Raban, T Simon, R McHaney</p>
               <p class="caption-2 pub-venue">International Journal of Information Management, 43, 284 to 294</p>
+                            <details class="pub-abstract">
+                              <summary class="caption-3">Abstract<i class="ph ph-caret-down" aria-hidden="true"></i></summary>
+                              <div class="pub-abstract-body body-6">
+                                <p>Organizations often focus on their employees' abilities to effectively communicate and share knowledge in online collaborative activities. Social media technologies facilitate that process in organizations, where they are known as Enterprise Social Networks (ESN). To increase potential benefits, organizations may run an implementation process to increase the ESN's acceptance and use. This study focused on one such platform, Yammer, which is making inroads into numerous industries. Specifically, we addressed Yammer's impact on communication and knowledge-sharing among organizational units in a multinational organization. This study unobtrusively assessed communication patterns before and after an ESN implementation process to measure impact. Data analysis performed on message interactions between employees on the Yammer platform suggested the implementation process had a positive impact on the number of messages, number of users, and weighted-degree SNA metric. This study also revealed that the implementation process positively impacted inter- and intra-organizational unit interactions.</p>
+                              </div>
+                            </details>
             </div>
             <div class="pub-cites"><span class="mono title-2">61</span><span class="caption-5">citations</span></div>
           </li>
@@ -407,6 +441,12 @@
               <h3 class="title-1"><a href="https://patents.google.com/patent/US20260288866A1/en" target="_blank" rel="noopener">Media item graph database</a></h3>
               <p class="body-6 pub-authors">O Nir, M Alburquerque, A Levi, S Amram, G Bertental, E Strugo, <strong>N Azaiza</strong>, D Hejna</p>
               <p class="caption-2 pub-venue">LLM generated descriptions, metadata and labels turned into a graph database of media items. Also filed as EP 4814740.</p>
+                            <details class="pub-abstract">
+                              <summary class="caption-3">Abstract<i class="ph ph-caret-down" aria-hidden="true"></i></summary>
+                              <div class="pub-abstract-body body-6">
+                                <p>In various examples there is a computer-implemented method, comprising ingesting into a memory a batch of media items. Duplicate media items in the batch are identified. For each duplicate media item, the duplicate media item is ranked with respect to duplicates of the media item. Filtering the duplicate media items is performed using the ranks of the duplicate media items to obtain filtered media items. Metadata of individual ones of the filtered media items is computed. Individual ones of the filtered media items are labelled with part of the metadata. For each filtered media item having metadata and a label, input into a Large Language Model, LLM, the media item, the label, the metadata and a request, and receive from the LLM a description of content depicted in the media item. A graph database of the filtered media items is created using the descriptions, the metadata, and the labels.</p>
+                              </div>
+                            </details>
             </div>
             <div class="pub-cites"><i class="ph ph-hourglass-medium" aria-hidden="true"></i><span class="caption-5">pending</span></div>
           </li>
@@ -416,6 +456,12 @@
               <p class="caption-3 pub-type">US patent 11,876,825 · Amdocs</p>
               <h3 class="title-1"><a href="https://patents.google.com/patent/US11876825B1/en" target="_blank" rel="noopener">System, method, and computer program for using metric valuations in anomaly scoring</a></h3>
               <p class="body-6 pub-authors">G Shama, <strong>N Azaizah</strong></p>
+              <details class="pub-abstract">
+                <summary class="caption-3">Abstract<i class="ph ph-caret-down" aria-hidden="true"></i></summary>
+                <div class="pub-abstract-body body-6">
+                  <p>As described herein, a system, method, and computer program are provided for using metric valuations in anomaly scoring. In use, a score calculated for a metric used for anomaly detection is identified. Additionally, the score is weighted, based on a valuation defined for the metric, to form a weighted score. Further, at least one action is caused to be performed, based on the weighted score.</p>
+                </div>
+              </details>
             </div>
             <div class="pub-cites"><i class="ph ph-seal-check" aria-hidden="true"></i><span class="caption-5">granted</span></div>
           </li>
@@ -425,6 +471,12 @@
               <p class="caption-3 pub-type">US patent 11,768,915 · Amdocs</p>
               <h3 class="title-1"><a href="https://patents.google.com/patent/US11768915B1/en" target="_blank" rel="noopener">System, method, and computer program for anomaly detection in time-series data with mixed seasonality</a></h3>
               <p class="body-6 pub-authors">G Shama, Y Avrashi, <strong>N Azaizah</strong>, P Vodolazov</p>
+              <details class="pub-abstract">
+                <summary class="caption-3">Abstract<i class="ph ph-caret-down" aria-hidden="true"></i></summary>
+                <div class="pub-abstract-body body-6">
+                  <p>As described herein, a system, method, and computer program are provided for anomaly detection in time-series data with mixed seasonality. In use, time-series data of a mixed seasonality type is received. Additionally, the time-series data is segmented, by a defined unit of time, to form a plurality of time-series data segments. Further, the plurality of time-series data segments are processed to determine one or more patterns across the plurality of time-series data segments. Still yet, the one or more patterns are stored and used to perform pattern matching for an input time-series.</p>
+                </div>
+              </details>
             </div>
             <div class="pub-cites"><i class="ph ph-seal-check" aria-hidden="true"></i><span class="caption-5">granted</span><span class="caption-5 pub-cites-extra"><span class="mono">5</span> citations</span></div>
           </li>
