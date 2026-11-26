@@ -23,6 +23,7 @@ Plain HTML, CSS and JavaScript. No build step, no frameworks, no trackers.
 * **Publications:** add an `<li class="pub">` in the `#research` section. Update citation counts from Google Scholar.
 * **Projects:** add an `<a class="repo">` card in the `#workshops` section when private repositories become public.
 * **Photo:** replace `assets/img/profile.jpg` (square, at least 400 × 400).
+* **Colors:** edit the tokens at the top of `assets/css/style.css`. The hero graph and the commit graph read the same variables, so they follow automatically. Also update `theme-color` in `index.html`, `favicon.svg` and `assets/img/og.png`.
 
 ## Local preview
 

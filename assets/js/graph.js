@@ -6,9 +6,11 @@
   const photo = document.getElementById('graph-photo');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  const css = getComputedStyle(document.documentElement);
+  const v = name => css.getPropertyValue(name).trim();
   const C = {
-    line: '#313131', lineHi: '#C3F25C', text: '#F2F2F2', muted: '#9B9B9B',
-    faint: '#6B6B6B', surface: '#181818', accent: '#C3F25C', bg: '#000000'
+    line: v('--line'), lineHi: v('--accent'), text: v('--text'), muted: v('--muted'),
+    faint: v('--faint'), surface: v('--surface-2'), accent: v('--accent'), bg: v('--bg')
   };
 
   const hubs = {

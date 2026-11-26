@@ -95,7 +95,8 @@
       const mainX = center(mainDot).x;
       const acadX = acadDot ? center(acadDot).x : mainX;
       const top = center(dots[0]).y, bottom = center(dots[dots.length - 1]).y;
-      path(`M${mainX} ${top} L${mainX} ${bottom}`, '#F2F2F2', '0.45');
+      const css = getComputedStyle(document.documentElement);
+      path(`M${mainX} ${top} L${mainX} ${bottom}`, css.getPropertyValue('--text').trim(), '0.35');
       git.querySelectorAll('.commit[data-merge]').forEach(m => {
         const b = git.querySelector(`.commit[data-branch="${m.dataset.merge}"]`);
         if (!b) return;
@@ -104,7 +105,7 @@
         const c = 28;
         path(`M${mainX} ${y1} C${mainX} ${y1 + c} ${acadX} ${y1 + c / 2} ${acadX} ${y1 + c * 1.4}` +
              ` L${acadX} ${y2}` +
-             ` C${acadX} ${y2 + c} ${mainX} ${y2 + c / 2} ${mainX} ${y2 + c * 1.4}`, '#C3F25C', '0.9');
+             ` C${acadX} ${y2 + c} ${mainX} ${y2 + c / 2} ${mainX} ${y2 + c * 1.4}`, css.getPropertyValue('--accent').trim(), '0.9');
       });
     };
     new ResizeObserver(drawGit).observe(git);
