@@ -2,7 +2,7 @@
 
 Personal website of **Nadeem Azaizah, PhD**, Senior Data Scientist at Microsoft (Applied AI, GenAI and Graph AI).
 
-Live: https://nadeemazaizah.github.io
+Live: https://nadeemazaizah.com
 
 ## Stack
 
@@ -36,3 +36,5 @@ Then open http://localhost:8000.
 ## Deploy
 
 GitHub Pages serves the `main` branch root. Push to `main` and the site updates within a minute.
+
+Custom domain: `nadeemazaizah.com`, set by the `CNAME` file. DNS lives in Cloudflare (DNS only, not proxied): four A records for `@` pointing to 185.199.108.153, .109.153, .110.153 and .111.153, plus a `www` CNAME to `nadeemazaizah.github.io`.

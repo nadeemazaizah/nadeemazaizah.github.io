@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nadeemazaizah.github.io/sitemap.xml
+Sitemap: https://nadeemazaizah.com/sitemap.xml
