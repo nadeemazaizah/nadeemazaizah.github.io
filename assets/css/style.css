@@ -197,6 +197,17 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 @keyframes pulse { 0% { transform: scale(1); opacity: .6; } 80%, 100% { transform: scale(3); opacity: 0; } }
 
+/* Mobile identity row: shows the face before the graph, which stacks below on small screens */
+.hero-id { display: none; align-items: center; gap: var(--s-100); }
+.hero-id img {
+  width: 56px; height: 56px; flex: none; object-fit: cover;
+  border-radius: var(--r-full); border: 2px solid var(--accent);
+  padding: 2px; background: var(--surface-2);
+}
+.hero-id p { display: grid; margin: 0; }
+.hero-id .title-sm { font-weight: 600; font-size: 16px; line-height: 24px; color: var(--text); }
+.hero-id .caption-1 { color: var(--muted); }
+
 .hero-title {
   margin-top: var(--s-300);
   max-width: 680px;
@@ -417,6 +428,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .hero-grid { grid-template-columns: 1fr; }
   .hero-graph { height: 420px; margin-right: 0; }
   .br-desk { display: none; }
+  .hero-id { display: flex; }
+  .hero-copy .eyebrow { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: var(--s-400); }
   .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
